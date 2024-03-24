@@ -11,6 +11,7 @@
         console.log(`im clicked ${new Date()}`);
       };
       buttonElement.addEventListener("click", behavior);
+      buttonElement.removeEventListener("click", behavior);
     </script>
   </body>
 </html>
