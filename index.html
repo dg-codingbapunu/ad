@@ -16,7 +16,8 @@
       // console.log("alaram set");
       // console.log(timerId);
       // clearTimeout(timerId);
-      setInterval(alaram, 1000);
+      let interVal = setInterval(alaram, 1000);
+      clearInterval(interVal);
     </script>
   </body>
 </html>
