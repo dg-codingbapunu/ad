@@ -4,20 +4,13 @@
     <title>time out function</title>
   </head>
   <body>
+    <button id="my-button">click Me</button>
     <script>
-      // arrow function in javascript
-      // setTimeout(function () {
-      //   console.log("subha ho gayi uth jao");
-      // }, 20000);
-      let alaram = function () {
-        console.log(`uth jao subha ho gayi ${new Date()}`);
+      let buttonElement = document.querySelector("#my-button");
+      let behavior = (event) => {
+        console.log(`im clicked ${new Date()}`);
       };
-      // let timerId = setTimeout(alaram, 10000);
-      // console.log("alaram set");
-      // console.log(timerId);
-      // clearTimeout(timerId);
-      let interVal = setInterval(alaram, 1000);
-      clearInterval(interVal);
+      buttonElement.addEventListener("click", behavior);
     </script>
   </body>
 </html>
